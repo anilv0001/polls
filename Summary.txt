@@ -1,0 +1,26 @@
+Technical Choices and Decisions
+
+- Key Decisions
+
+LocalStorage for Persistence:
+    LocalStorage was chosen for simplicity in storing votes. It allows quick development without needing server-side integration.
+
+Page-Specific Scoping:
+    The getPageId function ensures polls with the same ID on different pages are scoped properly, preventing data conflicts.
+
+Dynamic Rendering:
+    The render function dynamically updates the DOM for seamless interaction and reset functionality.
+
+
+
+- Improvements
+
+Accessibility Enhancements:
+ Add ARIA roles to improve usability for screen readers.
+
+Validation for Options:
+ Ensure options are non-empty and unique before initializing a poll.
+
+Improved Storage Mechanism:
+ Use an API or IndexedDB for large-scale applications requiring more robust storage.
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Widget - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="poll1"></div>
+    <script src="pollWidget.js"></script>
+    <script>
+        PollWidget.init(
+                document.getElementById("poll1"),
+                "poll1",
+                "How do you feel today?",
+                ["Brilliant! I have so much energy", "Always can be worse.", "Please, end my misery."]
+            );
+    </script>
+</body>
+</html>
